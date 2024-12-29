@@ -17,9 +17,8 @@ jobs:
         TAG_VERSION="v1.18.10"
         DOWNLOAD_URL="https://github.com/MetaCubeX/mihomo/releases/download/${TAG_VERSION}/mihomo-linux-amd64-compatible-${TAG_VERSION}.gz"
         curl -L -o mihomo.gz "$DOWNLOAD_URL"
-        gunzip mihomo.gz
+        gunzip clash.gz
         ls -al
-        mv "mihomo-linux-amd64-compatible-${TAG_VERSION}" clash
         chmod a+x clash
 
     - name: remove full mod flag
