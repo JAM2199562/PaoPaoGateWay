@@ -16,7 +16,7 @@ jobs:
       run: |
         TAG_VERSION="v1.18.10"
         DOWNLOAD_URL="https://github.com/MetaCubeX/mihomo/releases/download/${TAG_VERSION}/mihomo-linux-amd64-compatible-${TAG_VERSION}.gz"
-        curl -L -o mihomo.gz "$DOWNLOAD_URL"
+        curl -L -o clash.gz "$DOWNLOAD_URL"
         gunzip clash.gz
         ls -al
         chmod a+x clash
